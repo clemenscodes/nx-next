@@ -1,3 +1,0 @@
-[submodule "apps/api"]
-	path = apps/api
-	url = git@github.com:Jerga99/next-shopify-local.git
