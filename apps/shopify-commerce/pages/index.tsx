@@ -8,7 +8,7 @@ export function Index() {
                     <div id="welcome">
                         <h1>
                             <span> Hello there, </span>
-                            Welcome to discover-coffee-shops 👋
+                            Welcome shopify-commerce 👋
                         </h1>
                     </div>
                 </div>

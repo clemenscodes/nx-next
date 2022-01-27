@@ -1,6 +1,6 @@
 {
-    "root": "apps/discover-coffee-shops",
-    "sourceRoot": "apps/discover-coffee-shops",
+    "root": "apps/shopify-commerce",
+    "sourceRoot": "apps/shopify-commerce",
     "projectType": "application",
     "targets": {
         "build": {
@@ -8,8 +8,8 @@
             "outputs": ["{options.outputPath}"],
             "defaultConfiguration": "production",
             "options": {
-                "root": "apps/discover-coffee-shops",
-                "outputPath": "dist/apps/discover-coffee-shops"
+                "root": "apps/shopify-commerce",
+                "outputPath": "dist/apps/shopify-commerce"
             },
             "configurations": {
                 "production": {}
@@ -18,12 +18,12 @@
         "serve": {
             "executor": "@nrwl/next:server",
             "options": {
-                "buildTarget": "discover-coffee-shops:build",
+                "buildTarget": "shopify-commerce:build",
                 "dev": true
             },
             "configurations": {
                 "production": {
-                    "buildTarget": "discover-coffee-shops:build:production",
+                    "buildTarget": "shopify-commerce:build:production",
                     "dev": false
                 }
             }
@@ -31,14 +31,14 @@
         "export": {
             "executor": "@nrwl/next:export",
             "options": {
-                "buildTarget": "discover-coffee-shops:build:production"
+                "buildTarget": "shopify-commerce:build:production"
             }
         },
         "test": {
             "executor": "@nrwl/jest:jest",
-            "outputs": ["coverage/apps/discover-coffee-shops"],
+            "outputs": ["coverage/apps/shopify-commerce"],
             "options": {
-                "jestConfig": "apps/discover-coffee-shops/jest.config.js",
+                "jestConfig": "apps/shopify-commerce/jest.config.js",
                 "passWithNoTests": true
             }
         },
@@ -47,7 +47,7 @@
             "outputs": ["{options.outputFile}"],
             "options": {
                 "lintFilePatterns": [
-                    "apps/discover-coffee-shops/**/*.{ts,tsx,js,jsx}"
+                    "apps/shopify-commerce/**/*.{ts,tsx,js,jsx}"
                 ]
             }
         }

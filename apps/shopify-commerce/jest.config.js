@@ -1,10 +1,10 @@
 module.exports = {
-    displayName: 'discover-coffee-shops',
+    displayName: 'shopify-commerce',
     preset: '../../jest.preset.js',
     transform: {
         '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
         '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nrwl/next/babel'] }],
     },
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-    coverageDirectory: '../../coverage/apps/discover-coffee-shops',
+    coverageDirectory: '../../coverage/apps/shopify-commerce',
 };

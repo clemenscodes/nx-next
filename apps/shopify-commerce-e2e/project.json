@@ -1,0 +1,28 @@
+{
+    "root": "apps/shopify-commerce-e2e",
+    "sourceRoot": "apps/shopify-commerce-e2e/src",
+    "projectType": "application",
+    "targets": {
+        "e2e": {
+            "executor": "@nrwl/cypress:cypress",
+            "options": {
+                "cypressConfig": "apps/shopify-commerce-e2e/cypress.json",
+                "devServerTarget": "shopify-commerce:serve"
+            },
+            "configurations": {
+                "production": {
+                    "devServerTarget": "shopify-commerce:serve:production"
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["apps/shopify-commerce-e2e/**/*.{js,ts}"]
+            }
+        }
+    },
+    "tags": [],
+    "implicitDependencies": ["shopify-commerce"]
+}

@@ -12,7 +12,7 @@
             "rules": {
                 "@next/next/no-html-link-for-pages": [
                     "error",
-                    "apps/discover-coffee-shops/pages"
+                    "apps/shopify-commerce/pages"
                 ]
             }
         },
