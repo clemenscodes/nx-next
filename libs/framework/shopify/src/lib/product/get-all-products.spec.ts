@@ -15,6 +15,6 @@ global.fetch = jest.fn().mockResolvedValue(mockResponse);
 
 describe('getAllProducts', () => {
     it('should work', async () => {
-        expect(await getAllProducts()).toBeDefined();
+        expect(await getAllProducts()).toBe(mockTodo);
     });
 });
