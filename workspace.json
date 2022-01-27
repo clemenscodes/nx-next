@@ -1,6 +1,7 @@
 {
     "version": 2,
     "projects": {
+        "api": "apps/api",
         "framework-shopify": "libs/framework/shopify",
         "shopify-commerce": "apps/shopify-commerce",
         "shopify-commerce-e2e": "apps/shopify-commerce-e2e"
