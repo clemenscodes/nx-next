@@ -1,7 +1,7 @@
 {
-  "version": 2,
-  "projects": {
-    "next-flix": "apps/next-flix",
-    "next-flix-e2e": "apps/next-flix-e2e"
-  }
+    "version": 2,
+    "projects": {
+        "next-flix": "apps/next-flix",
+        "next-flix-e2e": "apps/next-flix-e2e"
+    }
 }
