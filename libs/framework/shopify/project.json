@@ -1,0 +1,23 @@
+{
+    "root": "libs/framework/shopify",
+    "sourceRoot": "libs/framework/shopify/src",
+    "projectType": "library",
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/framework/shopify/**/*.ts"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/framework/shopify"],
+            "options": {
+                "jestConfig": "libs/framework/shopify/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    },
+    "tags": []
+}

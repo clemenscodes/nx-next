@@ -1,20 +1,19 @@
-import styles from './index.module.scss';
+import { InferGetStaticPropsType } from 'next';
 
-export function Index() {
-    return (
-        <div className={styles.page}>
-            <div className="wrapper">
-                <div className="container">
-                    <div id="welcome">
-                        <h1>
-                            <span> Hello there, </span>
-                            Welcome shopify-commerce 👋
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+export async function getStaticProps() {
+    const products = [1, 2, 3];
+    return {
+        props: {
+            products,
+        },
+        revalidate: 4 * 60 * 60,
+    };
+}
+
+export function Index({
+    products,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
+    return <>{products}</>;
 }
 
 export default Index;
