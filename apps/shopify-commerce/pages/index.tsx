@@ -1,7 +1,8 @@
 import { InferGetStaticPropsType } from 'next';
+import { getAllProducts } from '@shopify';
 
 export async function getStaticProps() {
-    const products = [1, 2, 3];
+    const products = getAllProducts();
     return {
         props: {
             products,
