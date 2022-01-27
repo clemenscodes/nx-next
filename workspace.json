@@ -1,6 +1,8 @@
 {
     "version": 2,
     "projects": {
+        "discover-coffee-shops": "apps/discover-coffee-shops",
+        "discover-coffee-shops-e2e": "apps/discover-coffee-shops-e2e",
         "next-flix": "apps/next-flix",
         "next-flix-e2e": "apps/next-flix-e2e"
     }
