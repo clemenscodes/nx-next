@@ -5,6 +5,8 @@
         "framework-shopify": "libs/framework/shopify",
         "portfolio": "apps/portfolio",
         "portfolio-e2e": "apps/portfolio-e2e",
+        "rts": "apps/rts",
+        "rts-e2e": "apps/rts-e2e",
         "shopify-commerce": "apps/shopify-commerce",
         "shopify-commerce-e2e": "apps/shopify-commerce-e2e"
     }

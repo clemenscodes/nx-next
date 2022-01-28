@@ -1,0 +1,28 @@
+{
+    "root": "apps/rts-e2e",
+    "sourceRoot": "apps/rts-e2e/src",
+    "projectType": "application",
+    "targets": {
+        "e2e": {
+            "executor": "@nrwl/cypress:cypress",
+            "options": {
+                "cypressConfig": "apps/rts-e2e/cypress.json",
+                "devServerTarget": "rts:serve"
+            },
+            "configurations": {
+                "production": {
+                    "devServerTarget": "rts:serve:production"
+                }
+            }
+        },
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["apps/rts-e2e/**/*.{js,ts}"]
+            }
+        }
+    },
+    "tags": [],
+    "implicitDependencies": ["rts"]
+}
